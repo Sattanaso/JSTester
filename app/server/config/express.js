@@ -21,6 +21,6 @@ module.exports = (express, app, params) => {
 	app.use(passport.initialize());
 	app.use(passport.session());
 
-	const staticFolderName = '../../client';
+	const staticFolderName = '../../client/ui';
 	app.use('/', express.static(path.join(__dirname, staticFolderName)));
 }

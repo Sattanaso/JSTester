@@ -2,7 +2,7 @@ node_modules/
 gulpfile.js
 npm-debug.log
 .eslintrc.js
-server/config/constants.json
+app/server/config/constants.json
 
-client/css/
-client/test/
+app/client/ui/css/
+app/client/test/
