@@ -1,0 +1,8 @@
+node_modules/
+gulpfile.js
+npm-debug.log
+.eslintrc.js
+server/config/constants.json
+
+client/css/
+client/test/

@@ -1,0 +1,45 @@
+{
+  "name": "mycuisine",
+  "version": "1.0.0",
+  "description": "Single-page application",
+  "main": "startup.js",
+  "scripts": {
+    "start": "node startup.js",
+    "test": "cd client/test && test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sattanaso/myCuisine.git"
+  },
+  "keywords": [
+    "food",
+    "restaurants",
+    "menu"
+  ],
+  "author": "Absend",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sattanaso/myCuisine/issues"
+  },
+  "homepage": "https://github.com/Sattanaso/myCuisine#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "bootstrap": "^4.0.0-beta",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "handlebars": "^4.0.10",
+    "jquery": "^3.2.1",
+    "mongojs": "^2.4.1",
+    "navigo": "^5.3.1",
+    "nodemailer": "^4.1.0",
+    "passport": "^0.4.0",
+    "toastr": "^2.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "openurl": "^1.1.1"
+  }
+}

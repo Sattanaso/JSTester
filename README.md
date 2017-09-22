@@ -1,2 +1,2 @@
-# JSTester
-SPA
+# mycuisine
+Single-page application
