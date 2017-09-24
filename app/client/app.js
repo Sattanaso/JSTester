@@ -1,0 +1,4 @@
+$(() => {
+	layout.init;
+	router.init;
+});

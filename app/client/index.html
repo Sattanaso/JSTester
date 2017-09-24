@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>mycuisine</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./ui/assets/images/staff/icon-mycuisine.png">
+	<link rel="stylesheet" href="./libs/toastr.min.css">
+	<link rel="stylesheet" href="./ui/bundle.css">
+</head>
+
+<body>
+	<div class="wrapper container-fluid">
+		<header id="header" class="content header"></header>
+		<main id="main" class="content main">
+			<div class="loader"></div>
+		</main>
+		<footer id="footer" class="content footer"></footer>
+	</div>
+
+	<div id="scripts">
+		<!--  Data  -->
+		<script src="./libs/jquery.min.js"></script>
+		<script src="./scripts/utils/requester.js"></script>
+		<script src="./scripts/data/data.js"></script>
+		<script src="./scripts/utils/storage.js"></script>
+
+		<!--  Service  -->
+		<script src="./libs/toastr.min.js"></script>
+		<script src="./scripts/utils/notifier.js"></script>
+		<script src="./scripts/utils/validator.js"></script>
+		<script src="./scripts/service/main-service.js"></script>
+
+		<!--  View  -->
+		<script src="./libs/handlebars.min.js"></script>
+		<script src="./scripts/utils/template-loader.js"></script>
+		<script src="./scripts/views/view.js"></script>
+		<script src="./scripts/layout.js"></script>
+
+		<!--  Router  -->
+		<script src="./libs/navigo.min.js"></script>
+		<script src="./scripts/router.js"></script>
+		
+		<script src="./app.js"></script>
+	</div>
+</body>
+
+</html>

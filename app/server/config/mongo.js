@@ -9,7 +9,7 @@ module.exports = (connectionString) => {
 	})
 
 	db.on('connect', function () {
-		console.log('Database connected!')
+		console.log('Database up and running!')
 	})
 
 	const mongo = {
