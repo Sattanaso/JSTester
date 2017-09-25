@@ -4,7 +4,7 @@ const mainServicel = (() => {
 		}
 
 		getHome() {
-			view.home('#content', {})
+			return view.home('#content', {})
 		}
 	}
 

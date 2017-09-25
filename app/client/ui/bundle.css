@@ -1,3 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .wrapper {
+  background-color: #452917;
+  border: 2px solid #452917;
+}
+
+body .wrapper .content.header {
+  min-height: 240px;
+  padding-top: 10px;
+}
+
+body .wrapper .content.header.green {
+  background-image: url("assets/images/staff/green-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 60px;
+}
+
+body .wrapper .content.footer {
+  background-color: #FCFCF9;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/*===========================================*/
+
+/*===========================================*/
+
+@media only screen and (min-width: 768px) {
+  body .wrapper .content.header {
+    padding-top: 25px;
+    padding-left: 15.5%;
+  }
+}
+
+/*===========================================*/
+
+/*===========================================*/
 .loader {
   margin-left: 33%;
   margin-top: 50px;
@@ -573,6 +618,7 @@ template {
 [hidden] {
   display: none;
 }
+
 .loader {
   margin-left: 33%;
   margin-top: 50px;
@@ -603,8 +649,15 @@ template {
 /*===========================================*/
 
 /*===========================================*/
+/*===========================================*/
 
+/*===========================================*/
 
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    margin-left: 15.5%;
+  }
+}
 .upper-header {
   background-image: url("assets/images/staff/header-logo.png");
   background-repeat: no-repeat;
@@ -645,12 +698,57 @@ template {
 /*===========================================*/
 
 /*===========================================*/
-.show {
+.content-main {
+  padding-top: 30px;
+  height: 100px;
+  background-image: url("assets/images/staff/Home-bg-slide.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content-main .show {
   background-color: #FAFAF7;
   min-height: 50px;
 }
 
-.main-content {
+.content-main .main-content {
   background-color: #F5F4DC;
   min-height: 250px;
+}
+
+.content-main .btn-hi {
+  margin-left: 15.5%;
+}
+
+.content-main #slider {
+  background-color: #FAFAF7;
+  width: 70%;
+  height: 120px;
+  overflow: hidden;
+  margin-left: 0.5%;
+}
+
+.content-main #slider .slides {
+  display: block;
+  width: 6000px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.content-main #slider .slide {
+  float: left;
+  list-style-type: none;
+  width: 720px;
+  height: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-main {
+    background-size: 100%;
+  }
+
+  .content-main #slider {
+    margin-left: 15.5%;
+  }
 }
