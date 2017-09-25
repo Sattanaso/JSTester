@@ -1,4 +1,17 @@
+@font-face {
+	font-family: 'Goudy-Bookletter-1911';
+	src: url('../../assets/fonts/Goudy-Bookletter-1911/goudy_bookletter_1911.otf');
+}
 
+@font-face {
+	font-family: 'LeagueGothic-Regular';
+	src: url('../../assets/fonts/League-Gothic/LeagueGothic-Regular.otf');
+}
+
+@font-face {
+	font-family: 'helvetica-bold';
+	src: url('../../assets/fonts/helvetica-bold.otf');
+}
 
 body {
 	margin: 0;
@@ -18,7 +31,7 @@ body {
 		}
 
 		.content.header.green {
-			background-image: url("./assets/images/staff/green-bg.png");
+			background-image: url("../../assets/images/staff/green-bg.png");
 			background-repeat: no-repeat;
 			background-size: 100% 60px;
 		}

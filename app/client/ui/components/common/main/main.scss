@@ -1,0 +1,47 @@
+.show {
+	padding-top: 25px;
+	background-image: url("../../../assets/images/staff/slider-bg.png");
+	background-repeat: no-repeat;
+	background-size: 170%;
+	min-height: 50px;
+}
+
+.main-content {
+	background-color: #F5F4DC;
+	min-height: 250px;
+}
+
+#slider {
+	background-color: #FAFAF7;
+	width: 70%;
+	height: 80px;
+	overflow: hidden;
+	margin-left: 0.5%;
+}
+
+#slider .slides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	width: 920px;
+	height: 120px;
+}	
+
+
+@media only screen and (min-width : 768px) {
+.show {
+	padding-top: 45px;
+	background-size: 100%;
+}
+
+	#slider {
+		margin-left: 15.5%;
+	}
+}

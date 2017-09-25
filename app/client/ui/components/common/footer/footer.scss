@@ -1,5 +1,10 @@
 .footer-content {
-	
+	height: 100px;
+	.btn-hi {
+		width: 150px;
+		background-image: url("../../../assets/images/staff/btn-bottom.png");
+		margin-left: 49%;
+	}
 }
 
 @media only screen and (min-width : 320px) {
