@@ -6,44 +6,12 @@
 				<li class="slide">2222 ewtttttttttttttttttttttttttttttttttttttttttttttttttt</li>
 				<li class="slide">3333 dgggggggdgggggggggggggggggggggggggggggggggggg</li>
 				<li class="slide">4444 fwewqfwqggggggggggggggggggggggggggggggggg</li>
+				<li class="slide">5555 dgggggggdgggggggggggggggggggggggggggggggggggg</li>
+				<li class="slide">6666 fwewqfwqggggggggggggggggggggggggggggggggg</li>
 			</ul>
 		</div>
 	</section>
-	<section class="main-content">Down content</section>
+	<section class="main-content">
+		<div class="main-cont">Down content</div>
+	</section>
 </div>
-
-
-<script>
-	$(() => {
-		let width = 920;
-		let animationSpeed = 1000;
-		let pause = 6000;
-		let currentSlide = 1;
-
-		let $slider = $('#slider');
-		let $sliderContainer = $slider.find('.slides');
-		let $slides = $sliderContainer.find('.slide');
-
-		let interval;
-
-		function startSlider() {
-			interval = setInterval(() => {
-				$sliderContainer.animate({ 'margin-left': '-=' + width }, animationSpeed, () => {
-					currentSlide++;
-					if (currentSlide === $slides.length) {
-						currentSlide = 1;
-						$sliderContainer.css('margin-left', 0);
-					}
-				});
-			}, pause);
-		}
-
-		function stopSlider() {
-			clearInterval(interval);
-		}
-
-		$slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
-		startSlider();
-	})
-
-</script>

@@ -1064,20 +1064,12 @@ body .wrapper .content.footer {
 
 /*==========  Mobile First Method  ==========*/
 
-/*===========================================*/
-
-/*===========================================*/
-
 @media only screen and (min-width: 768px) {
   body .wrapper .content.header {
     padding-top: 25px;
     padding-left: 15.5%;
   }
 }
-
-/*===========================================*/
-
-/*===========================================*/
 .loader {
   margin-left: 33%;
   margin-top: 50px;
@@ -1113,9 +1105,11 @@ body .wrapper .content.footer {
   height: 100px;
 }
 
-.footer-content .btn-hi {
+.footer-content #btn.btn-hi {
   width: 150px;
+  min-height: 150px;
   background-image: url("assets/images/staff/btn-bottom.png");
+  background-size: 100% 150px;
   margin-left: 49%;
 }
 
@@ -1190,6 +1184,7 @@ body .wrapper .content.footer {
 }
 
 #slider .slides {
+  background-color: darkkhaki;
   display: block;
   width: 6000px;
   height: 400px;
@@ -1210,7 +1205,8 @@ body .wrapper .content.footer {
     background-size: 100%;
   }
 
-  #slider {
+  #slider,
+  .main-cont {
     margin-left: 15.5%;
   }
 }

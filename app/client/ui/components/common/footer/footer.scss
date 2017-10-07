@@ -1,8 +1,10 @@
 .footer-content {
 	height: 100px;
-	.btn-hi {
+	#btn.btn-hi {
 		width: 150px;
+		min-height: 150px;
 		background-image: url("../../../assets/images/staff/btn-bottom.png");
+		background-size: 100% 150px;
 		margin-left: 49%;
 	}
 }
