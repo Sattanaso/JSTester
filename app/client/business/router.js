@@ -15,9 +15,6 @@ const router = {
 				'/contact': () => {
 					view.main('#main', {});
 				},
-				'/menu': () => {
-					view.menu('#main', {});
-				},
 				'/awards': () => {
 					view.awards('#main', {});
 				},

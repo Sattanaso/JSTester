@@ -3,12 +3,20 @@
 	background-repeat: no-repeat;
 	background-size: 200%;
 	padding-right: 16%;
-	padding-top: 8px;
+	padding-top: 6px;
 
 	.menu-bar {
 		list-style-type: none;
 		margin-left: 50%;
+		display: none;
 	}
+	
+	.menu-bar-btn {
+		display: block;
+		margin-left: 100%;
+		margin-top: -3px;
+	}
+
 	.menu-bar li {
 		display: inline-block;
 		font-family: serif;
@@ -17,6 +25,29 @@
 
 		a {
 			color: #ffffff;
+			&:focus{
+				color: #EEE4BA;
+			}
+		}
+	}
+	
+	.menu {
+		padding-top: 10px;
+		width: 16%;
+		height: 150px;
+		display: none;
+		margin-left: 63%;
+		list-style-type: none;
+		background-color: #958e7d;
+
+		.menu-item {
+			font-family: serif;
+			font-size: 1em;
+			margin-bottom: 10px;
+			margin-left: -1px;
+			a {
+				color: #ffffff;
+			}
 		}
 	}
 }
@@ -38,9 +69,13 @@
 	.upper-header {
 		min-height: 80px;
 		background-size: 100%;
+		padding-top: 8px;
 
+		.menu-bar-btn {
+			display: none;
+		}
 		.menu-bar {
-			
+			display: block;
 		}
 	}
 }

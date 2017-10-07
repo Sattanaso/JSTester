@@ -1,11 +1,21 @@
+@import '../global.scss';
+
 .footer-content {
 	height: 100px;
-	#btn.btn-hi {
-		width: 150px;
-		min-height: 150px;
-		background-image: url("../../../assets/images/staff/btn-bottom.png");
-		background-size: 100% 150px;
-		margin-left: 49%;
+
+	button {
+		min-width: 150px;
+		height: 30px;
+		border: 1px solid #635F45;
+		border-radius: 9999em 9999em 9999em 9999em;
+		background-color: #9B9673;
+		display: block;
+		margin-top: -5%;
+		margin-left: 18%;
+		color: whitesmoke;
+		background-image: url("../../../../assets/images/staff/btn-bottom.png");
+		background-repeat: no-repeat;
+		font-family: 'Goudy-Bookletter-1911', serif;
 	}
 }
 

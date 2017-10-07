@@ -1,7 +1,5 @@
 node_modules/
-gulpfile.js
 npm-debug.log
-.eslintrc.js
 
 app/server/config/constants.json
 
