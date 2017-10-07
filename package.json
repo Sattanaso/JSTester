@@ -3,14 +3,6 @@
   "version": "1.0.0",
   "description": "Single-page application",
   "main": "startup.js",
-  "scripts": {
-    "fin": "npm run final",
-    "final": "gulp final",
-    "linter": "gulp linter",
-    "sass": "gulp sass:watch",
-    "start": "cd app && node startup.js",
-    "test": "cd app/client/test && test.html"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sattanaso/myCuisine.git"
@@ -26,6 +18,17 @@
     "url": "https://github.com/Sattanaso/myCuisine/issues"
   },
   "homepage": "https://github.com/Sattanaso/myCuisine#readme",
+  "engines": {
+    "node": ">=6.10.*"
+  },
+  "scripts": {
+    "fin": "npm run final",
+    "final": "gulp final",
+    "linter": "gulp linter",
+    "sass": "gulp sass:watch",
+    "start": "cd app && node startup.js",
+    "test": "cd app/client/test && test.html"
+  },
   "dependencies": {
     "body-parser": "^1.18.1",
     "cookie-parser": "^1.4.3",

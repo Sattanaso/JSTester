@@ -913,24 +913,6 @@ button.toast-close-button {
 /*===========================================*/
 
 /*===========================================*/
-.footer-content {
-  height: 100px;
-}
-
-.footer-content .btn-hi {
-  background-image: url("assets/images/staff/btn-bottom.png");
-  margin-left: 49%;
-}
-
-/*===========================================*/
-
-/*===========================================*/
-
-@media only screen and (min-width: 768px) {
-  .footer-content {
-    margin-left: 15.5%;
-  }
-}
 .upper-header {
   background-image: url("assets/images/staff/header-logo.png");
   background-repeat: no-repeat;
@@ -971,6 +953,24 @@ button.toast-close-button {
 /*===========================================*/
 
 /*===========================================*/
+.footer-content {
+  height: 100px;
+}
+
+.footer-content .btn-hi {
+  background-image: url("assets/images/staff/btn-bottom.png");
+  margin-left: 49%;
+}
+
+/*===========================================*/
+
+/*===========================================*/
+
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    margin-left: 15.5%;
+  }
+}
 .show {
   padding-top: 25px;
   background-image: url("assets/images/staff/slider-bg.png");
@@ -1093,7 +1093,7 @@ body .wrapper .content.footer {
 
 @media only screen and (min-width: 768px) {
   .loader {
-    margin-left: 50%;
+    margin-left: 45%;
   }
 }
 
@@ -1168,9 +1168,13 @@ body .wrapper .content.footer {
   margin-top: -5%;
   margin-left: 18%;
   color: whitesmoke;
-  background-image: url("../assets/images/staff/btn-bottom.png");
-  background-repeat: no-repeat;
   font-family: 'Goudy-Bookletter-1911', serif;
+}
+
+.footer-content .icon {
+  display: block;
+  margin-top: 15px;
+  margin-left: 27.5%;
 }
 
 /*===========================================*/
@@ -1182,6 +1186,59 @@ body .wrapper .content.footer {
     margin-left: 15.5%;
   }
 }
+@font-face {
+  font-family: 'Goudy-Bookletter-1911';
+  src: url("components/assets/fonts/Goudy-Bookletter-1911/goudy_bookletter_1911.otf");
+}
+
+@font-face {
+  font-family: 'LeagueGothic-Regular';
+  src: url("components/assets/fonts/League-Gothic/LeagueGothic-Regular.otf");
+}
+
+@font-face {
+  font-family: 'helvetica-bold';
+  src: url("components/assets/fonts/helvetica-bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .wrapper {
+  background-color: #452917;
+  border: 2px solid #452917;
+}
+
+body .wrapper .content.header {
+  min-height: 240px;
+  padding-top: 10px;
+}
+
+body .wrapper .content.header.green {
+  background-image: url("components/assets/images/staff/green-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 60px;
+}
+
+body .wrapper .content.footer {
+  background-color: #FCFCF9;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+@media only screen and (min-width: 768px) {
+  body .wrapper .content.header {
+    padding-top: 25px;
+    padding-left: 15.5%;
+  }
+}
+
 .upper-header {
   background-image: url("assets/images/staff/header-logo.png");
   background-repeat: no-repeat;
@@ -1217,7 +1274,7 @@ body .wrapper .content.footer {
   color: #EEE4BA;
 }
 
-.upper-header .menu {
+.menu {
   padding-top: 10px;
   width: 16%;
   height: 150px;
@@ -1227,15 +1284,34 @@ body .wrapper .content.footer {
   background-color: #958e7d;
 }
 
-.upper-header .menu .menu-item {
+.menu .menu-item {
   font-family: serif;
   font-size: 1em;
   margin-bottom: 10px;
   margin-left: -1px;
 }
 
-.upper-header .menu .menu-item a {
+.menu .menu-item a {
   color: #ffffff;
+}
+
+.wallet {
+  margin-left: 2%;
+  font-size: 32px;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+button {
+  min-width: 150px;
+  height: 30px;
+  border: 1px solid #375323;
+  border-radius: 9999em 9999em 9999em 9999em;
+  background-color: #749B58;
+  display: block;
+  margin-left: 2%;
+  color: whitesmoke;
+  font-family: 'Goudy-Bookletter-1911', serif;
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -1267,8 +1343,7 @@ body .wrapper .content.footer {
   padding-top: 25px;
   background-image: url("assets/images/staff/slider-bg.png");
   background-repeat: no-repeat;
-  background-size: 170%;
-  min-height: 50px;
+  background-size: 170% 40px;
 }
 
 .main-content {
@@ -1279,7 +1354,7 @@ body .wrapper .content.footer {
 #slider {
   background-color: #FAFAF7;
   width: 99%;
-  min-height: 40px;
+  min-height: 150px;
   overflow: hidden;
   margin-left: 0.5%;
 }
@@ -1292,24 +1367,29 @@ body .wrapper .content.footer {
 }
 
 #slider .slide {
+  background-color: #fafaf7;
   float: left;
   list-style-type: none;
-  width: 920px;
+  min-width: 920px;
   height: 120px;
   font-family: 'Goudy-Bookletter-1911', serif;
-  font-size: 16px;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .show {
     padding-top: 45px;
-    background-size: 100%;
+    background-size: 100% 200px;
   }
 
   #slider,
   .main-cont {
     width: 70%;
     margin-left: 15.5%;
+  }
+
+  .main-content {
+    padding-top: 20px;
   }
 }

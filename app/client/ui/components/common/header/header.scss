@@ -1,3 +1,5 @@
+@import '../global.scss';
+
 .upper-header {
 	background-image: url("../../../assets/images/staff/header-logo.png");
 	background-repeat: no-repeat;
@@ -30,26 +32,45 @@
 			}
 		}
 	}
-	
-	.menu {
-		padding-top: 10px;
-		width: 16%;
-		height: 150px;
-		display: none;
-		margin-left: 63%;
-		list-style-type: none;
-		background-color: #958e7d;
+}
 
-		.menu-item {
-			font-family: serif;
-			font-size: 1em;
-			margin-bottom: 10px;
-			margin-left: -1px;
-			a {
-				color: #ffffff;
-			}
+.menu {
+	padding-top: 10px;
+	width: 16%;
+	height: 150px;
+	display: none;
+	margin-left: 63%;
+	list-style-type: none;
+	background-color: #958e7d;
+
+	.menu-item {
+		font-family: serif;
+		font-size: 1em;
+		margin-bottom: 10px;
+		margin-left: -1px;
+		a {
+			color: #ffffff;
 		}
 	}
+}
+
+.wallet {
+	margin-left: 2%;
+	font-size: 32px;
+	color: #ffffff;
+	font-family: sans-serif;
+}
+
+button {
+	min-width: 150px;
+	height: 30px;
+	border: 1px solid #375323;
+	border-radius: 9999em 9999em 9999em 9999em;
+	background-color: #749B58;
+	display: block;
+	margin-left: 2%;
+	color: whitesmoke;
+	font-family: 'Goudy-Bookletter-1911', serif;
 }
 
 /*==========  Mobile First Method  ==========*/
