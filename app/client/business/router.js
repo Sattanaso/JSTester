@@ -4,7 +4,7 @@ const router = {
 		appRouter
 			.on({
 				'/home': () => {
-					view.main('#main', {});
+					view.main('#main', constantz);
 				},
 				'/reviews': () => {
 					view.reviews('#main', {});
@@ -14,6 +14,9 @@ const router = {
 				},
 				'/contact': () => {
 					view.main('#main', {});
+				},
+				'/hours': () => {
+					view.hours('#main', {});
 				},
 				'/awards': () => {
 					view.awards('#main', {});

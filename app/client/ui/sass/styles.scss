@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'Goudy-Bookletter-1911';
+	src: url('../../assets/fonts/Goudy-Bookletter-1911/goudy_bookletter_1911.otf');
+}
+@font-face {
+	font-family: 'LeagueGothic-Regular';
+	src: url('../../assets/fonts/League-Gothic/LeagueGothic-Regular.otf');
+}
+@font-face {
+	font-family: 'helvetica-bold';
+	src: url('../../assets/fonts/helvetica-bold.otf');
+}
+
+$header-bg-color: #452917;
+$nav-bg-color: #958E7D;
+$nav-text-hover: #EEE4BA;
+$footer-bg-color: #FCFCF9;
+$neutral-color: #FFFFFF;
+
+body .wrapper {
+	box-sizing: border-box;
+	background-color: $header-bg-color;
+	border: 2px solid $header-bg-color;
+	a {
+		text-decoration: none;
+	}
+	li {
+		list-style: none;
+	}
+	//--
+
+	header.header {
+		min-height: 240px;
+		padding-top: 10px;
+
+		.header-content {
+			background-image: url("../assets/images/staff/header-logo.png");
+			background-repeat: no-repeat;
+			background-size: 260%;
+			padding-top: 6px;
+			padding-right: 16%;
+
+			nav.side-bar {
+				position: fixed;
+				padding-top: 20px;
+
+				ul.nav-bar {
+					background-color: $nav-bg-color;
+					width: 95%;
+					margin-left: 155%;
+					//display: none;
+
+					li {
+						font-family: serif;
+						font-size: 0.7em;
+						cursor: pointer;
+
+						a.menu-bar-item {
+							color: $neutral-color;
+							&:focus, &:hover {
+								color: $nav-text-hover;
+							}
+						}
+					}
+					ul.menu {
+						display: none;
+					}
+				}
+				button.menu-bar-btn {
+					background-color: $nav-text-hover;
+					width: 25px;
+					height: 25px;
+					border: 1px solid $header-bg-color;
+					border-radius: 10%;
+					position: fixed;
+					top: 25px;
+					right: 12px;
+				}
+			}
+		}
+	}
+
+	main.main {
+		.loader {
+			border: 16px solid $footer-bg-color; 
+			border-top: 16px solid $nav-bg-color;
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+		}
+
+		.main-content {
+			section.carousel-wrapper {
+				padding-top: 25px;
+				background-image: url("../assets/images/staff/slider-bg.png");
+				background-repeat: no-repeat;
+				background-size: 150% 40px;
+				
+				#slider {
+					background-color: $footer-bg-color;
+					width: 99%;
+					min-height: 150px;
+					overflow: hidden;
+					margin-left: 0.5%;
+
+					.slides {
+						display: block;
+						width: 6000px;
+						margin: 0;
+						padding: 0;
+
+						.slide {
+							background-color: $footer-bg-color;
+							float: left;
+							list-style-type: none;
+							min-width: 920px;
+							height: 120px;
+							font-family: 'Goudy-Bookletter-1911', serif;
+							font-size: 38px;
+							margin-bottom: 10px;
+						}	
+					}
+				}
+			}
+		}
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+	}
+
+	footer.footer {
+		background-color: $footer-bg-color;
+	}
+}

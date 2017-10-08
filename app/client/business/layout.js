@@ -1,7 +1,7 @@
 const layout = {
 	init: (() => {
-		view.header('#header', {});
-		view.main('#main', {});
-		view.footer('#footer', {});
+		view.header('#header', constantz);
+		view.main('#main', constantz);
+		view.footer('#footer', constantz);
 	})()
 }
